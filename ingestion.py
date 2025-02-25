@@ -14,7 +14,7 @@ embeddings = OllamaEmbeddings(
     temperature=0
 )
 def ingest_docs():
-    loader = ReadTheDocsLoader("langchain-docs-5/en/latest", encoding="utf-8")
+    loader = ReadTheDocsLoader("Folder_path", encoding="utf-8")
 
     raw_documents = loader.load()
     print(f"loaded {len(raw_documents)} documents")
